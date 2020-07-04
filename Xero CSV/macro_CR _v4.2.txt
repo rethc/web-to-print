@@ -1,0 +1,55 @@
+Sub CSV()
+Dim unitAmount As Long
+Dim accountCode As Long
+Dim erow As Long
+Dim ecol As Long
+Dim fileName As String
+
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Selection.Delete Shift:=xlUp
+    range("A1").Select
+    ActiveCell.FormulaR1C1 = "InvoiceNumber"
+    range("B1").Select
+    ActiveCell.FormulaR1C1 = "InvoiceDate"
+    range("C1").Select
+    ActiveCell.FormulaR1C1 = "ContactName"
+    Columns("D:D").Select
+    Selection.Delete Shift:=xlToLeft
+    range("D1").Select
+    ActiveCell.FormulaR1C1 = "EmailAddress"
+    range("E1").Select
+    ActiveCell.FormulaR1C1 = "Description"
+    range("F1").Select
+    ActiveCell.FormulaR1C1 = "Quantity"
+    range("G1").Select
+    ActiveCell.FormulaR1C1 = "Total"
+    range("H1").Select
+    ActiveCell.FormulaR1C1 = "UnitAmount"
+    range("I1").Select
+    ActiveCell.FormulaR1C1 = "AccountCode"
+    Columns("J:J").Select
+    Selection.Delete Shift:=xlToLeft
+    Columns("K:K").Select
+    Selection.Delete Shift:=xlToLeft
+    
+    'Calculate UnitAmount and autofill to the last row in the column'
+    range("H2:H" & range("H" & Rows.Count).End(xlUp).Row - 1).FormulaR1C1 = "=RC[-1]/RC[-2]"
+    
+    'Enter account code and autofill to the last row'
+    range("I2:I" & range("A" & Rows.Count).End(xlUp).Row - 1).FormulaR1C1 = "200"
+    
+    'Delete last row in spreadsheet'
+     erow = range("A" & Rows.Count).End(xlUp).Row
+     ecol = Cells(1, Columns.Count).End(xlToLeft).Column
+     
+     range(Cells(erow, 1), Cells(erow, ecol)).Delete
+     
+     ChDir "C:\CSV"
+     
+     myfilename = Left(ActiveWorkbook.Name, InStr(ActiveWorkbook.Name, ".") - 1)
+     
+     ActiveWorkbook.SaveAs fileName:="C:\CSV\" & myfilename & "_output.csv", FileFormat:=xlCSV, _
+     CreateBackup:=False
+
+End Sub
