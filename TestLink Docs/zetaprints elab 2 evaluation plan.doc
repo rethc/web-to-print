@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testreport ZetaPrints Testing</title>
+<link type="text/css" rel="stylesheet" href="http://chesda.co.nz/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="http://chesda.co.nz/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Plan Execution Report</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Web To Print<br>Test Plan: Evaluation Results for ZetaPrints<br>Test Suite: ZetaPrints Testing</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 10/09/2013</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><br><b><p style="padding-left: 20px;"><a href="#toc_1_1">1.1. ZetaPrints Testing</a></p></b>
+<b><p style="padding-left: 30px;"><a href="#toc_1_1_1">1.1.1. Evaluation Results</a></p></b>
+<p style="padding-left: 60px;"><a href="#toc_tc574">W2P-272: Customer Registration</a></p><p style="padding-left: 60px;"><a href="#toc_tc576">W2P-273: Customer Login</a></p><p style="padding-left: 60px;"><a href="#toc_tc578">W2P-274: Online Template Use</a></p><p style="padding-left: 60px;"><a href="#toc_tc580">W2P-275: Customer Design Upload</a></p><p style="padding-left: 60px;"><a href="#toc_tc582">W2P-276: Design Assistance Request</a></p><p style="padding-left: 60px;"><a href="#toc_tc584">W2P-277: Online Information Request</a></p><p style="padding-left: 60px;"><a href="#toc_tc586">W2P-278: Add to Shopping Cart</a></p><p style="padding-left: 60px;"><a href="#toc_tc588">W2P-279: Remove from Shopping Cart</a></p><p style="padding-left: 60px;"><a href="#toc_tc590">W2P-280: Price Calculated</a></p><p style="padding-left: 60px;"><a href="#toc_tc592">W2P-281: Price Calculated 2</a></p><p style="padding-left: 60px;"><a href="#toc_tc594">W2P-282: Price Calculated 3</a></p><p style="padding-left: 60px;"><a href="#toc_tc596">W2P-283: New Customer Order Submitted</a></p><p style="padding-left: 60px;"><a href="#toc_tc598">W2P-284: Customer Reorder</a></p><p style="padding-left: 60px;"><a href="#toc_tc600">W2P-285: Order Cancellation</a></p><p style="padding-left: 60px;"><a href="#toc_tc602">W2P-286: Credit Card Payment</a></p><p style="padding-left: 60px;"><a href="#toc_tc604">W2P-287: Internet Payment Selected</a></p><p style="padding-left: 60px;"><a href="#toc_tc606">W2P-288: Customer Views History</a></p><p style="padding-left: 60px;"><a href="#toc_tc608">W2P-289: Customer Approves Custom Design</a></p><p style="padding-left: 60px;"><a href="#toc_tc610">W2P-290: Customer wants to change custom design</a></p><p style="padding-left: 60px;"><a href="#toc_tc612">W2P-291: Customer wants to cancel custom design</a></p><p style="padding-left: 60px;"><a href="#toc_tc614">W2P-292: Customer completes survey</a></p><p style="padding-left: 60px;"><a href="#toc_tc616">W2P-293: Copy Express Updates website</a></p><p style="padding-left: 60px;"><a href="#toc_tc618">W2P-294: Copy Express Uploads Quote/feedback</a></p><p style="padding-left: 60px;"><a href="#toc_tc620">W2P-295: Customer fails to log out</a></p><p style="padding-left: 60px;"><a href="#toc_tc622">W2P-296: Browser closed without log out</a></p><p style="padding-left: 60px;"><a href="#toc_tc624">W2P-297: Choosing Template</a></p><p style="padding-left: 60px;"><a href="#toc_tc626">W2P-298: Making Appointment</a></p><p style="padding-left: 60px;"><a href="#toc_tc628">W2P-299: Job Priority</a></p><p style="padding-left: 60px;"><a href="#toc_tc630">W2P-300: Check Backlog</a></p><p style="padding-left: 60px;"><a href="#toc_tc632">W2P-301: Payment</a></p><p style="padding-left: 60px;"><a href="#toc_tc634">W2P-302: Feedback</a></p><p style="padding-left: 60px;"><a href="#toc_tc636">W2P-303: Quote</a></p><p style="padding-left: 60px;"><a href="#toc_tc638">W2P-304: Cancel Order</a></p><p style="padding-left: 60px;"><a href="#toc_tc640">W2P-305: Add Order</a></p><p style="padding-left: 60px;"><a href="#toc_tc642">W2P-306: Pre-press PDF Proofing</a></p><p style="padding-left: 60px;"><a href="#toc_tc644">W2P-307: Pre-Press JDF File</a></p><p style="padding-left: 60px;"><a href="#toc_tc646">W2P-308: Print Job completed</a></p><p style="padding-left: 60px;"><a href="#toc_tc648">W2P-309: Job needs to be rerun</a></p><p style="padding-left: 60px;"><a href="#toc_tc650">W2P-310: Load invoices into Xero using CSV format</a></p><p style="padding-left: 60px;"><a href="#toc_tc652">W2P-311: Load Invoices into Xero using API Integration</a></p><p style="padding-left: 60px;"><a href="#toc_tc654">W2P-312: Monthly Invoicing</a></p><p style="padding-left: 60px;"><a href="#toc_tc656">W2P-313: Weekly Invoicing</a></p><p style="padding-left: 60px;"><a href="#toc_tc658">W2P-314: Customer Credit</a></p><p style="padding-left: 60px;"><a href="#toc_tc660">W2P-315: Produce Sales Trends Report</a></p><p style="padding-left: 60px;"><a href="#toc_tc662">W2P-316: Produce Sales History Report</a></p></div><h1 class="doclevel" >Test Project: Web To Print</h1>
+<div class="txtlevel"><p>
+	Web to print project</p></div>
+ <br/><p></p><a name='toc_1_1'></a>
+<h1 class='doclevel'>1.1. Test Suite : ZetaPrints Testing</h1>
+<a name='toc_1_1_1'></a>
+<h2 class='doclevel'>1.1.1. Test Suite : Evaluation Results</h2>
+<div><p>
+	Evaluation on the demo website.</p>
+</div><a name="toc_tc574"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-272: Customer Registration</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc576"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-273: Customer Login</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc578"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-274: Online Template Use</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Huge choice of preloaded designs for customer and able to preview before committing.</td></tr>
+</table>
+</div>
+<a name="toc_tc580"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-275: Customer Design Upload</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Can upload images to add to templates</td></tr>
+</table>
+</div>
+<a name="toc_tc582"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-276: Design Assistance Request</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Form is provided and needs to follow the instructions</td></tr>
+</table>
+</div>
+<a name="toc_tc584"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-277: Online Information Request</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Physical address, email to website owner</td></tr>
+</table>
+</div>
+<a name="toc_tc586"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-278: Add to Shopping Cart</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc588"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-279: Remove from Shopping Cart</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc590"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-280: Price Calculated</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Fixed pricing guide.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Price per item displayed. No price matrix</td></tr>
+</table>
+</div>
+<a name="toc_tc592"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-281: Price Calculated 2</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Dynamic Calculation</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc594"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-282: Price Calculated 3</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Quote pricing</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >No wait for admin or quote option</td></tr>
+</table>
+</div>
+<a name="toc_tc596"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-283: New Customer Order Submitted</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc598"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-284: Customer Reorder</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Yes from "My Account"</td></tr>
+</table>
+</div>
+<a name="toc_tc600"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-285: Order Cancellation</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Need to send an email</td></tr>
+</table>
+</div>
+<a name="toc_tc602"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-286: Credit Card Payment</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc604"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-287: Internet Payment Selected</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc606"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-288: Customer Views History</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc608"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-289: Customer Approves Custom Design</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >By Email</td></tr>
+</table>
+</div>
+<a name="toc_tc610"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-290: Customer wants to change custom design</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >By Email</td></tr>
+</table>
+</div>
+<a name="toc_tc612"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-291: Customer wants to cancel custom design</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >By Email</td></tr>
+</table>
+</div>
+<a name="toc_tc614"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-292: Customer completes survey</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc616"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-293: Copy Express Updates website</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc618"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-294: Copy Express Uploads Quote/feedback</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Not available in this extension</td></tr>
+</table>
+</div>
+<a name="toc_tc620"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-295: Customer fails to log out</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc622"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-296: Browser closed without log out</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc624"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-297: Choosing Template</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc626"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-298: Making Appointment</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc628"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-299: Job Priority</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc630"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-300: Check Backlog</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc632"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-301: Payment</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc634"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-302: Feedback</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc636"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-303: Quote</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Can be emailed but not updated</td></tr>
+</table>
+</div>
+<a name="toc_tc638"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-304: Cancel Order</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc640"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-305: Add Order</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc642"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-306: Pre-press PDF Proofing</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc644"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-307: Pre-Press JDF File</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc646"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-308: Print Job completed</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc648"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-309: Job needs to be rerun</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc650"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-310: Load invoices into Xero using CSV format</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc652"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-311: Load Invoices into Xero using API Integration</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Cost of Xero API is only $20USD</td></tr>
+</table>
+</div>
+<a name="toc_tc654"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-312: Monthly Invoicing</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >No batching evident</td></tr>
+</table>
+</div>
+<a name="toc_tc656"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-313: Weekly Invoicing</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >No batching evident</td></tr>
+</table>
+</div>
+<a name="toc_tc658"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-314: Customer Credit</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="2" >Only in Xero</td></tr>
+</table>
+</div>
+<a name="toc_tc660"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-315: Produce Sales Trends Report</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Failed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+<a name="toc_tc662"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case W2P-316: Produce Sales History Report</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">Chesda</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">Last Result:</span></td><td  colspan="2" ><b>Passed</b></td></tr>
+<tr><td width="20%" valign="top">Build</td><td  colspan="2" >Elaboration Phase 2</b></td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="2" >Chesda</b></td></tr>
+</table>
+</div>
+
+</body>
+</html>
