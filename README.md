@@ -1,6 +1,6 @@
 # WelTec Final Year Project
 
-An important part of my degree at WelTec was the final year team project researching “web to print” solutions for an external client. The project went through the entire project process from proposal, design and analysis, development and testing and deployment phases. We installed existing “web to print” system that met with the client’s specifications and in accordance to our project proposal and thoroughly tested each system. We also developed add-on software in C# and Visual Basic for Applications (VBA) to integrate with Xero. This was a great learning experience as was able to learn the in-depth process involved in working as a group to deliver an end product. This project enabled me to put into practice many of the skills I have learnt in my degree.
+An important part of my degree at WelTec was the final year team project researching “web to print” solutions for an external client. The project went through the entire project process from proposal, design and analysis, development and testing and deployment phases. We installed existing “web to print” system that met with the client’s specifications and in accordance to our project proposal and thoroughly tested each system. We also developed add-on software in C# and Visual Basic for Applications (VBA) for Xero integration. This was a great learning experience as was able to learn the in-depth process involved in working as a group to deliver an end product. This project enabled me to put into practice many of the skills I have learnt in my degree.
 
 
 # web2-to-print
